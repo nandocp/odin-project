@@ -1,0 +1,135 @@
+html {
+	display: block;
+	width: 100%;
+	font-family: arial, sans-serif;
+	font-size: small;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	margin-right: 20px;
+}
+
+.topnav {
+	display: inline-block;
+	width: 100%;
+	height: 85px;
+}
+.topnav a {
+	color: #000;
+}
+.topnav li {
+	list-style-type: none;
+	display: inline;
+	width: 100%;
+	position: relative;
+	bottom: 10px;
+}
+.topnav ul {
+	display: inline;
+	float: right;
+}
+.topnav input[type=submit] {
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	font-weight: bold;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	padding: 0 12px;
+	height: 28px;
+	padding: 0 12px;
+	color: white;
+	margin: 0 20px;
+	position: relative;
+	bottom: 10px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.google-logo {
+	display: flex;
+	clear: both;
+}
+.search {
+	display: flex;
+	clear: both;
+}
+.search input[type=text] {
+	height: 39px !important;
+	width: 550px;
+	border: 0.5px solid rgba(0,0,0,0.05);
+	box-shadow: 2px 2px 11px -5px rgba(0, 0, 0, 0.75);
+	font-size: 16px;
+	padding: 5px 9px 0;
+	padding-left: 16px;
+}
+.searchbtn {
+	display: block;
+	text-align: center;
+}
+
+.botnav {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+}
+.botnav a {
+	color: #666;
+}
+.botnav li {
+	list-style-type: none;
+	display: inline;
+	width: 100%;
+	height: 40px;
+}
+ul.left {
+	display: inline;
+	float: left;
+	height: 40px;
+}
+ul.right {
+	display: inline;
+	float: right;
+	height: 40px;
+}
+
+.button {
+	padding: 11px 17px;
+	background-color: #f2f2f2;
+	font-weight: bold;
+	color: #666;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	margin: 11px 4px;
+}
+.button:hover {
+	border: 1px solid #b2b2b2;
+	color: black;
+	background-color: #f4f4f4;
+}
+
+.mic {
+	height: 22px;
+	width: 16px;
+	position: relative;
+	bottom: 39px;
+	left: 540px;
+}
+
+.keyb {
+	position: relative;
+	bottom: 36px;
+	left: 480px;
+}
