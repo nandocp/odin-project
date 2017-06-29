@@ -3,15 +3,20 @@
 	<head>
 		<title>Etch-a-(Pride)-Sketchpad</title>
 		<link href="style/stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 		<script src="scripts/jquery-3.2.1.min.js"></script>
 		<script src="scripts/script.js"></script>
 	</head>
 	<body>
-		<h1>Pride Sketch Book</h1>
+		<div id="newrefresh">
+			<div id="newlayout-button">
+				<input type="text" placeholder=" type a number up to 64" min="1" max="64" class="box-number">
+				<input type="button" value="new layout" class="button-new">
+			</div>
+			<input type="button" class="refresh" value="Refresh">
+		</div>
 		<div id="container">
 		</div>
-		<div id="new">
-			<button type="button" class="refresh">Refresh</button> 
-		</div>
+		<h1>Pride Sketch Book</h1>
 	</body>
 </html>
