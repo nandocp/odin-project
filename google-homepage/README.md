@@ -1,3 +1,6 @@
+pt: Desconstruir uma página web existente e reconstruí-la
+en: Deconstruct an existing web page and rebuild it
+
 GOALS:
 - build an HTML with Google's structure and CSS it; OK
 - to be able to identify all elements; OK
