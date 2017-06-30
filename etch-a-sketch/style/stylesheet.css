@@ -1,105 +1,71 @@
 body {
-	display: flex;
+	display:flex;
 	flex-direction: column;
-	margin: 0;
-	font-family: 'comfortaa';
+	margin:0;
+	font-family:'comfortaa';
 }
 
 h1 {
-	text-align: center;
-	margin: 15px;
+	text-align:center;
+	margin:15px;
 }
 /* grid structure */
 #container {
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	border-top: 1px solid #2a2a2a;
-	border-left: 1px solid #2a2a2a;
-	max-width: 512px;
-	max-height: 512px;
+	display:flex;
+	flex-direction:row;
+	margin:0 auto;
+	border-top:1px solid #2a2a2a;
+	border-left:1px solid #2a2a2a;
+	max-width:512px;
+	max-height:512px;
 }
 #container .col {
-	display: flex;
-	flex-flow: column;
+	display:flex;
+	flex-flow:column;
 }
 #container .col .square-block {
-	display: flex;
+	display:flex;
 	height:7px;
-	width: 7px;
-	border-right: 1px solid #2a2a2a;
-	border-bottom: 1px solid #2a2a2a;
+	width:7px;
+	border-right:1px solid #2a2a2a;
+	border-bottom:1px solid #2a2a2a;
 }
 /* buttons */
 #newrefresh {
 	display:flex;
-	margin: 10px auto 20px;
+	margin:10px auto 20px;
 }
 /* refresh button */
 #newrefresh input {
-	display: flex;
-	padding: 15px 30px;
-	border: 1px solid #fafafa;
-	border-radius: 5px;
+	display:flex;
+	padding:15px 30px;
+	border:1px solid #fafafa;
+	border-radius:5px;
 }
 #newrefresh .refresh {
-	margin-left: 38px;
-	font-family: 'comfortaa';
-	font-weight: bold;
+	margin-left:38px;
+	font-family:'comfortaa';
+	font-weight:bold;
 }
 /* new layout button */
 #newrefresh #newlayout-button {
-	display: block;
-	border: 1px solid #fafafa;
-	border-radius: 5px;
-	background-color: buttonface;
-	padding-left: 10px;
+	display:block;
+	border:1px solid #fafafa;
+	border-radius:5px;
+	background-color:buttonface;
+	padding-left:10px;
 }
 #newrefresh #newlayout-button input[type="text"] {
-	display: inline-block;
-	padding: 7px;
-	font-family: 'comfortaa';
-	font-weight: bold;
-	background-color: buttonface;
-	border: 0;
+	display:inline-block;
+	padding:7px;
+	font-family:'comfortaa';
+	font-weight:bold;
+	background-color:buttonface;
+	border:0;
 }
 #newrefresh #newlayout-button input[type="button"] {
 	display:inline-block;
-	border: 0;
-	font-family: 'comfortaa';
-	font-weight: bold;
+	border:0;
+	font-family:'comfortaa';
+	font-weight:bold;
 }
-
-/* lgbtq colors to change background of button when hovered
-.red {
-	background-color: #F28560; 
-}
-.orange {
-	background-color: #F2B560;
-}
-.yellow {
-	background-color: #F2CD60;
-}
-.green {
-	background-color: #56D88C;
-}
-.blue {
-	background-color: #60C1F2;
-}
-.magenta {
-	background-color: #BD93D8;
-}
-trans colors to change background of button when hover
-.pink {
-	background-color: #FFDCFC;
-}
-.babyblue {
-	background-color: #C8FEFF;
-}
-.white {
-	background-color: #FFF;
-}
-.default {
-	background-color: buttonface;
-}
-*/
