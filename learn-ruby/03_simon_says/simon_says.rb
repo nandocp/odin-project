@@ -44,15 +44,18 @@ end
 def titleize(str)
   arr = str.split
   cont = 1
-  cont_interno = 0
+  cont_interno = 1
   temp = ""
   capitalized = []
 
-  while arr.length >= cont
+  capitalized << arr[0].split.map(&:capitalize).join
+  while arr.length - 1 >= cont
     while cont_interno <= arr.length - 1
       temp = arr[cont_interno]
-      if temp[0] == temp[0].downcase
+      if temp[0] == temp[0].downcase && temp.length >= 4
         temp[0] = temp[0].upcase
+        capitalized << temp
+      else
         capitalized << temp
       end
       cont_interno += 1
@@ -61,10 +64,6 @@ def titleize(str)
   end
   return capitalized.join(' ')
 end
-
-
-
-
 # converter str em arr. iterar sobre cada elemento, capitalizando
 # a primeira letra de cada palavra. ==> OK.
 # SE a palavra estiver na primeira posição da array, capitalizar
@@ -74,3 +73,8 @@ end
 #                     adicionar a capitalized[].
 # #senão, capitaliza.
 #         E adiciona a capitalized[]
+=begin
+  if arr[0].temp[0] == arr[0].temp[0].downcase
+     arr[0].temp[0] = arr[0].temp[0].upcase
+     capitalized << arr[0].temp[0]
+=end
