@@ -1,18 +1,21 @@
 class ArticlesController < ApplicationController
 include ArticlesHelper
 
-def index
+def index # shows all articles in the db
 	@articles = Article.all
 end
 
-def show
+def show # shows the specified article (by :id)
 	@article = Article.find(params[:id])
+
+	@comment = Comment.new
+	@comment.article_id = @article.id
 end
 
-def new
+def new # creates the form/object to the new article
 	@article = Article.new
 end
-def create
+def create # saves the article to the db
 	@article = Article.new(article_params)
 	@article.save
 
