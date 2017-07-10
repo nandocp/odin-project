@@ -1,0 +1,20 @@
+<%= form_for(@article) do |f| %>
+	<ul>
+		<% @article.errors.full_messages.each do |err| %>
+			<li><%= err %></li>
+		<% end %>
+	</ul>
+	<p>
+		<%= f.label :title %><br> <%# creates an HTML label for a form field %>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :body %><br>
+		<%= f.text_area :body %>
+	</p>
+	<p>
+		<%= f.submit %> <%# creates a button labeled "Create" %>
+	</p>
+<% end %>
+
+<%# f.name is a helper %>
