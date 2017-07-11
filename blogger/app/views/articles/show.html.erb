@@ -10,11 +10,11 @@
   <% end %>
 </p>
 <%= link_to "<< voltar para lista de artigos", articles_path %>
+<% if logged_in? %>
+	<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
 
-<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
-
- <%= link_to "edit", edit_article_path(@article) %>
-
+	<%= link_to "edit", edit_article_path(@article) %>
+<% end %>
 <%= render partial: 'comments/form' %>
  <h3>Comments (<%= @article.comments.size %>)</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>

@@ -1,4 +1,5 @@
 class AuthorSessionsController < ApplicationController
+
 	def new # responsible for rendering its related form
 	end
 
