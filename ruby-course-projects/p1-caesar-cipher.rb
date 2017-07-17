@@ -38,7 +38,9 @@ def caesar_cipher(str, num)
 		i += 1
 		result_caesar << ordinal
 	end
+
 	return result_caesar.join(' ')
+
 end
 
 puts caesar_cipher("What a string!", 5)
