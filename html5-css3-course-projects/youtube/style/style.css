@@ -1,0 +1,132 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ESTRUTURA DAS SEÇÕES */
+header {
+	padding: 0 16px;
+	height: 56px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+#main {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	background-color: hsl(0, 0%, 98%);
+}
+#video {
+	display: inline-flex;
+	flex-direction: column;
+	margin: 23px 0 0 12px;
+}
+#suggest {
+	display: inline-flex;
+	flex-direction: column;
+	margin: 26px 0 0 24px;
+}
+/* IMAGENS */
+.toggle {
+	padding: 8px;
+	margin-right: 16px;
+	position: relative;
+	top: 13px;
+	left: 2px;
+}
+.logo {
+	width: 56px;
+	height: 24px;
+	position: relative;
+	top: 10px;
+}
+/* PESQUISA */
+.search-bar {
+	height: 24px;
+	width: 482px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  border: 1px solid rgb(204, 204, 204);
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+  left: 109px;
+}
+header button {
+	height: 30px;
+	width: 65px;
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+	padding: 2px 6px;
+  border: 1px solid rgb(198, 198, 198);
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  position: relative;
+  left: 104px;
+  top: 3px;
+}
+.right {
+	float: right;
+	position: relative;
+	right: 14px;
+	top: 7px;
+}
+.upload {
+	position: relative;
+	top: 6px;
+	right: 24px;
+}
+header input[type=button] {
+	background-color: #167ac6;
+	color: #fff;
+	border: 1px solid transparent;
+	height: 28px;
+	padding: 0 10px;
+  font-weight: 500;
+  font-size: 11px;
+  border-radius: 3px;
+}
+/* VÍDEO PRINCIPAL */
+#video h1 {
+	margin-top: 23px;
+	font-size: 18px;
+	line-height: 18px;
+}
+#video h2 {
+	display: inline;
+	margin-top: 15px;
+	font-size: 16px;
+	color: rgba(17, 17, 17, 0.6);
+}
+#video img {
+	width: 50%;
+	position: relative;
+	left: 435px;
+	bottom:18px;
+}
+/* SUGESTÕES */
+#suggest iframe {
+	width: 168px;
+	height: 94px;
+	margin-top: 14px;
+}
+.vid-info {
+	display: inline;
+	word-break: normal;
+	margin-top: 14px;
+	margin-left: 10px;
+}
+.vid-title {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.vid-prod, .vid-numb {
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(17, 17, 17, 0.6);
+}
+#suggest li {
+	display: flex;
+	flex-direction: row;
+}
