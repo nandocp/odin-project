@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class ActionsController < ApplicationController
 	def index # GET
 		@name = "Index action here! I display all your content"
 	end
@@ -16,7 +16,6 @@ class UsersController < ApplicationController
 	end
 
 	def create # POST
-		@user = User.new
-		@user.save
+		@name = "Post action here!"
 	end
 end

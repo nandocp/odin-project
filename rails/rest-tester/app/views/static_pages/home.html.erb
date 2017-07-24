@@ -1,0 +1,24 @@
+<h1>Aplicativo teste</h1>
+<p>Isso é um aplicativo-teste de REST, HTTP, etc.</p>
+<figure>
+	<%= image_tag("cat.gif", alt:"Gato lixando unhas") %>
+</figure>
+
+<section id="get-list">
+	<h2>Para ver cada ação REST(GET), clique nos links abaixo:</h2>
+	<ul>
+		<li><%= link_to "index/GET", actions_path %></li>
+		<li><%= link_to "new/GET", new_action_path %></li>
+		<li><%= link_to "edit/GET", edit_action_path(:id) %></li>
+		<li><%= link_to "show/GET", action_path(:id) %></li>
+	</ul>
+</section>
+
+<section class="info-box">
+	<h2>Respostas HTTP</h2>
+	<p>Código: <%= @code %></p>
+  <p>Pedido: <%= @request %></p>
+  <p>Cookies: <%= @cookies %></p>
+  <p>Cookie jar: <%= @cookie_jar %></p>
+  <p>Headers: <%= @headers %></p>
+</section>
