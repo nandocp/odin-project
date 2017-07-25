@@ -1,7 +1,5 @@
 # README
 
-Para retornar as mensagens, um servidor rails precisa estar rodando (adicionar depois a possibilidade de entrar url e ver as repostas ao browser).
-
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
