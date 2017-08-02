@@ -1,0 +1,21 @@
+<% if false %>
+	<%= form_tag("/users", method: "post") do %>
+		<%= label_tag(:username, "Username") %>
+		<%= text_field_tag(:username) %>
+		<br>
+		<%= label_tag(:email, "E-mail") %>
+		<%= text_field_tag(:email) %>
+		<br>
+		<%= label_tag(:password, "Password") %>
+		<%= password_field_tag(:password) %>
+		<br>
+		<%= submit_tag("Create user") %>
+	<% end %>
+<% end %>
+
+<%= form_for @user do |f| %>
+	<%= f.text_field :username, placeholder: "Your username here!"  %><br>
+	<%= f.text_field :email, placeholder: "Your e-mail here!" %><br>
+	<%= f.password_field :password, placeholder: "Your password here!" %><br>
+	<%= f.submit %>
+<% end %>
