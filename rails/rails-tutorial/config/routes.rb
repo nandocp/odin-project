@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'sessions/new'
 
 	root 'static_pages#home'
@@ -10,5 +11,5 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create' # create a new session
   delete '/logout', to: 'sessions#destroy' # delete a session
   resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :account_activations, only: [:edit]
 end
