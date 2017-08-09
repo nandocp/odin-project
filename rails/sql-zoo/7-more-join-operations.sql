@@ -68,6 +68,37 @@ PROBLEM 11: Busy years for John Travolta
 -- Which were the busiest years for 'John Travolta'?
 -- Show the year and the number of movies he made each year
 -- for any year in which he made more than 2 movies.
-SELECT yr, COUNT(title) FROM movie JOIN casting ON movie.id = movieid
-																	 JOIN actor ON actorid = actor.id
-WHERE name = 'John Travolta';
+SELECT yr,COUNT(title) FROM movie JOIN casting ON movie.id = movieid
+         													JOIN actor ON actorid = actor.id
+	WHERE name='John Travolta' GROUP BY yr
+	HAVING COUNT(title)=(SELECT MAX(c) FROM	(SELECT yr,COUNT(title) AS c FROM movie JOIN casting ON movie.id = movieid
+         																																					JOIN actor ON actorid=actor.id
+ 																					 	WHERE name='John Travolta'
+ 																						GROUP BY yr) AS t)
+
+PROBLEM 12: Lead actor in Julie Andrews movies
+-- List the film title and the leading actor for all of the films 'Julie Andrews' played in.
+SELECT title, name FROM movie JOIN casting ON (movieid = movie.id AND ord = 1)
+															JOIN actor ON (actorid = actor.id)
+	WHERE movie.id IN (SELECT movieid FROM casting
+										 WHERE actorid IN (SELECT id FROM actor
+										 									 	WHERE name LIKE 'Julie Andrews'))
+
+PROBLEM 13: Actors with 30 leading roles
+-- Obtain a list, in alphabetical order, of actors who've had at least 30 starring roles.
+SELECT name FROM actor JOIN casting
+	ON (id = actorid AND (SELECT COUNT(ord) FROM casting WHERE actorid = actor.id AND ord=1)>=30)
+GROUP BY name
+
+PROBLEM 14
+-- List the films released in the year 1978 ordered by the number of actors in the cast, then by title
+SELECT movie.title, COUNT(actorid) AS cast FROM movie JOIN casting ON id = movieid
+	WHERE yr = 1978
+	GROUP BY title
+	GROUP BY cast DESC
+
+PROBLEM 15
+-- List all the people who have worked with 'Art Garfunkel'
+SELECT DISTINCT name FROM actor JOIN casting ON id = actorid
+	WHERE movieid IN (SELECT movieid FROM casting JOIN actor ON (actorid = id AND name = 'Art Garfunkel')) AND name != 'Art Garfunkel'
+	GROUP BY name
