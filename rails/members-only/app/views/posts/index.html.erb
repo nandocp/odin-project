@@ -1,0 +1,15 @@
+<% @posts.each do |post| %>
+	<article class="post">
+		<%= post.body %>
+	</article>
+<% end %>
+
+
+<% if logged_in? %>
+	<p>You are logged in, just a test</p>
+<% else %>
+	<p>Not logged in</p>
+<% end %>
+<%= @posts %>
+
+<%= will_paginate @posts %>

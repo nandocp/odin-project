@@ -1,0 +1,15 @@
+<%= form_for @member do |f| %>
+	<%= f.label :name, "Nome" %><br>
+	<%= f.text_field :name, placeholder: "Digite seu nome" %><br>
+
+	<%= f.label :email, "Email" %><br>
+	<%= f.text_field :email, placeholder: "Digite seu e-mail" %><br>
+
+	<%= f.label :password, "Senha" %><br>
+	<%= f.password_field :password, placeholder: "Mínimo de 6 caracteres" %><br>
+
+	<%= f.label :password_confirmation, "Confirmação de senha" %><br>
+	<%= f.password_field :password_confirmation, placeholder: "Confirme sua senha" %><br>
+
+	<%= f.submit %>
+<% end %>
