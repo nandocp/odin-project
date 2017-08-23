@@ -1,0 +1,549 @@
+/* body */
+#left {
+	display: inline-block;
+	position: fixed;
+	width: 30px;
+	height: 100%;
+	box-shadow: inset -4px 0 4px 0 rgba(25,25,25,0.04);
+	background-color: white;
+}
+#container {
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+}
+#main {
+	margin-left: 113px;
+	width: 1125px;
+}
+.clear {
+	clear: both;
+}
+.thick {
+	font-weight: bold;
+}
+
+/* top-navbar */
+nav {
+	position:fixed;
+  right: 0px;
+  left: 0px;
+	height: 47px;
+	background-color: #fff;
+	margin-left: 30px;
+	max-width: 100%;
+	border-bottom: 1px solid #e2e2e2;
+	z-index: 10;
+}
+.sections-btn {
+	position: relative;
+	right: 15px;
+	box-sizing: border-box;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06), inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+	height: 30px;
+	padding: 7px 9px;
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	background-color: #fff;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: rgb(51,51,51);
+}
+.left-btn {
+	box-sizing: border-box;
+	padding: 7px 9px;
+	border: 0;
+	background-color: #fff;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: rgb(51,51,51);
+}
+.left-btn:hover {
+	background-color: #f7f7f5;
+}
+.right-btn {
+	box-sizing: border-box;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: rgb(51,51,51);
+}
+#to-the-right {
+	display: inline-block;
+	float: right;
+}
+.icone {
+	height: 16px;
+	width: 16px;
+	color: #333;
+}
+
+/* <header> */
+header {
+	clear: both;
+	height: 83px;
+	width: 100%;
+	margin-left: 30px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.06);
+	border-bottom: 1px solid #ccc;
+	margin-top: 47px;
+}
+#top-list {
+	list-style: none;
+	height: 83px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#top-list li {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 240px;
+	height: 65px;
+	padding: 5px;
+	border-right: 1px solid rgb(226, 226, 226);
+	margin: 4px 4px 0 4px;
+	overflow: hidden;
+}
+#top-list img {
+	display: inline-block;
+	float: left;
+	height: 65px;
+	width: 65px;
+}
+.top-list-text {
+	display: inline-block;
+	box-sizing: content-box;
+	height: 65px;
+}
+#top-list p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16px;
+}
+#top-list h6 {
+	margin: 0;
+}
+
+/* <article> */
+article {
+	margin-top: 127px;
+}
+article h4 {
+	font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+	border-top: 1px solid black;
+	margin-bottom: 32px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-bottom: 32px;
+}
+article h1 {
+	margin-bottom: 10px;
+	font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 38px;
+}
+#author-buttons {
+	border-top: 1px solid rgb(226, 226, 226);
+	padding-top: 14px;
+}
+#author-buttons p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+#author {
+	font-size: 11px;
+	font-weight: bold;
+	margin-right: 12px;
+}
+#date {
+	font-size: 11px;
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+}
+#buttons {
+	display: inline-block;
+	float: right;
+}
+#social-buttons {
+	display: inline-block;
+	border-right: 1px solid #ccc;
+}
+.icone-social {
+	width: 25px;
+	height: 25px;
+	margin-right: 15px;
+}
+#self-buttons {
+	display: inline-block;
+}
+.bandeirinha {
+	width: 16px;
+	height: 25px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.contador {
+	width: 36px;
+	height: 24px;
+	margin-left: 15px;
+}
+.photo {
+	width: 1125px;
+}
+#first-fig {
+	margin-bottom: 45px;
+	border: 0;
+	max-width: 615px;
+}
+#first-fig img {
+	margin-bottom: 7px;
+}
+#first-fig figcaption {
+	color: rgb(102,102,102);
+	font-size: 14px;
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+	line-height: 18px;
+}
+#first-fig .credit {
+	font-size: 11px;
+	line-height: 16px;
+	color: #999;
+}
+		/* main text */
+.main-text {
+	max-width: 570px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: georgia,"times new roman",times,serif;
+	font-size: 17px;
+	line-height: 26px;
+	margin: 0 0 17px 75px;
+}
+#before-infographic,  {
+	width: 705px;
+	font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+	color: #333;
+}
+#main #article-end {
+	max-width: 570px;
+	margin: 0 0 17px 75px;
+	color: rgb(153,153,153);
+	font-size: 11px;
+}
+
+		/* recent comments */
+#recent-comments {
+	display: inline-block;
+	position: absolute;
+	left: 838px;
+	margin-bottom: 45px;
+}
+#recent-comments a {
+	text-decoration: none;
+	margin-top: 75px;
+}
+#recent-comments ul {
+	height: 273px;
+	width: 360px;
+	padding: 0;
+	list-style: none;
+}
+#recent-comments img {
+	display: inline-block;
+	width: 20px;
+	height: 13px;
+}
+
+/* infographic */
+#infographic {
+	width: 1125px;
+	height: 705px;
+	color: #333;
+}
+#infographic h2 {
+	color: rgb(51,51,51);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-bottom: 3px;
+}
+#infographic figure {
+	box-sizing: border-box;
+	padding: 0;
+	margin-bottom: 15px;
+}
+#infographic figcaption p {
+	color: rgb(102,102,102);
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+#infographic img {
+	width: 945px;
+	height: 576px;
+}
+figure {
+	width: 945px;
+	padding: 15px 0;
+	border-top: 1px solid rgb(226,226,226);
+	border-bottom: 1px solid rgb(226,226,226);
+	margin: 15px 0;
+	box-sizing: border-box;
+}
+#captions {
+	position: relative;
+}
+.caption {
+	position: absolute;
+}
+.caption p {
+	width: 228px;
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: 300;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	border: 0;
+	margin: 0;
+}
+.caption span {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+#caption-1 {
+	bottom: 314px;
+}
+#caption-2 {
+	bottom: 314px;
+	left: 234px;
+}
+#caption-3 {
+	bottom: 331px;
+	left: 481px;
+}
+#caption-4 {
+	bottom: 314px;
+	left: 725px;
+}
+#caption-5 {
+	bottom: 34px;
+}
+#caption-6 {
+	bottom: 17px;
+	left: 234px;
+}
+#caption-7 {
+	bottom: 34px;
+  left: 481px;
+}
+#caption-8 {
+	bottom: 34px;
+	left: 725px;
+}
+#author-infographic {
+	font-size: 12px;
+	line-height: 14px;
+	color: rgb(153,153,153);
+  font-family: "nyt-franklin",arial,helvetica,sans-serif;
+  margin: 0;
+}
+
+/* video */
+#video-description {
+	margin-top: 8px;
+	color: rgb(102,102,102);
+	font-size: 13px;
+	line-height: 17px;
+}
+#video p {
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+	color: rgb(102,102,102);
+	font-size: 13px;
+}
+#video-creator {
+	line-height: 16px;
+	font-size: 11px;
+	color: rgb(153,153,153);
+}
+
+/* newsletter subscription */
+#newsletter {
+	display: inline-block;
+	float: left;
+	width: 300px;
+	height: 275px;
+	border-top: 1px solid rgb(226,226,226);
+	border-bottom: 1px solid rgb(226,226,226);
+	margin: 7px 30px 15px 75px;
+}
+
+/* More in space section */
+#more-in-space {
+	border-top: 1px solid rgb(204,204,204);
+	height: 497px;
+	width: 705px;
+}
+#more-in-space .more-title {
+	font-weight: 500;
+}
+#go-to {
+	float: right;
+	padding: 7px 0 21px 0;
+	text-decoration: none;
+	font-size: 12px;
+	color: #6288a5;
+}
+#more-in-space h3 {
+	padding: 7px 0 21px 0;
+	margin: 0;
+}
+#up {}
+#first-three,
+#last-three {
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+.middle-more-in-space {
+	margin: 0 auto;
+}
+#first-three li,
+#last-three li {
+	display: inline-block;
+	vertical-align: top;
+}
+#first-three a,
+#last-three a {
+	display: block;
+	max-width: 210px;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+#first-three p,
+#last-three p {
+	margin: 0;
+}
+#down {}
+
+/* Trending section */
+#trending {
+	float: right;
+	max-width: 360px;
+}
+#trending ol {
+	padding-left: 18px;
+}
+#trending .trending-title:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+.trending-article { /* li */
+	box-sizing: content-box;
+	min-height: 40px;
+	padding: 6px 0;
+	border-top: 1px solid rgb(243, 243, 243);
+}
+.trending-article a {
+	min-height: 40px;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+	text-decoration: none;
+	color: #326891;
+}
+.trending-article img {
+	display: inline-block;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+}
+.trending-article p {
+	display: inline-block;
+	min-height: 40px;
+	padding-left: 20px;
+	margin: 0;
+}
+#view-more {
+}
+
+/* Recommended for you section */
+#recommended {
+	max-width: 705px;
+	border-top: 1px solid rgb(204,204,204);
+}
+#to-recommended {
+	float: right;
+}
+#recommended h3 {}
+#recommended ul {
+	padding: 0;
+}
+#recommended .item {
+	display: inline-block;
+	vertical-align: top;
+}
+#recommended a {
+	display: block;
+	max-width: 210px;
+	font-family: "nyt-cheltenham", georgia, "times new roman", times, serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+/* footer the new york times links */
+#bar {
+	clear: both;
+	width: 1050px;
+	height: 1px;
+	border-top: 2px solid rgb(226, 226, 226);
+	border-bottom: 1px solid rgb(226, 226, 226);
+	margin-bottom: 9px;
+}
+#nyt-links {
+	position: relative;
+	box-sizing: content-box;
+	max-width: 1050px;
+	margin: 25px auto;
+}
+#nyt-links p {
+	float: right;
+	margin: 0;
+}
+#nyt-links
+#news,
+#opinion,
+#arts,
+#living,
+#listing-and-more,
+#subscribe {
+	clear: right;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin-right: 40px;
+}
+#nyt-links #links-lists li {
+	list-style: none;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 8px;
+}
+#nyt-links #links-lists h3 {
+	font-size: 13px;
+	font-weight: bold;
+}
+#nyt-links #links-lists a {
+	color: rgb(51,51,51);
+	text-decoration: none;
+}
