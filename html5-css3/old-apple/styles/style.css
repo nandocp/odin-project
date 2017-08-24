@@ -1,0 +1,145 @@
+body {
+	flex-direction: column;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Thonburi, sans-serif;
+}
+.border-reset {
+	border-right: 0;
+	padding-right: 0;
+}
+
+/* section: big pic */
+#one-pic {
+	height: 538px;
+	max-width: 100%;
+	background-color: blue;
+	background-image: url("assets/big-pic.jpg") no-repeat;
+}
+#one-pic a {
+	position: relative;
+	top: 150px;
+	height: 538px;
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+#one-pic img {
+}
+#one-pic #first-sentence {}
+#one-pic #second-sentence {
+	position: relative;
+	bottom: 14px;
+	margin: 0 auto;
+}
+#one-pic #third-sentence {}
+
+/* top navbar */
+nav {
+	position: absolute;
+	max-width: 980px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 18px;
+	height: 36px;
+	background-image: linear-gradient(to top, #666 50%, #808080 50%);
+	border-radius: 4px;}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+.nav-item {
+	display: inline-flex;
+	width: 106px;
+}
+.box-2 {
+	width: 105px;
+}
+
+/* section: row with 4 pics */
+#four-pics {
+	margin: 1px 0 25px 0;
+	width: 100%;
+	height: 200px;
+}
+#four-pics ul {
+	height: 200px;
+	margin: 0 auto;
+	padding: 0;
+}
+#four-pics li {
+	float: left;
+	box-sizing: content-box;
+	height: 200px;
+	width: 24.9%;
+	margin-right: 1px;
+	list-style: none;
+}
+#four-pics #first-pic {
+	background: url("assets/four-pic1.jpg");
+	background-color: #808080;
+}
+#four-pics #second-pic {
+	background: url("assets/four-pic2.jpg");
+	background-color: #808080;
+}
+#four-pics #third-pic {
+	background: url("assets/four-pic3.jpg");
+	background-color: #808080;
+}
+#four-pics #last-pic {
+	max-width: 100%;
+	margin-right: 0;
+	background: url("assets/four-pic4.jpg");
+	background-color: #808080;
+}
+
+/* footer */
+footer {
+	clear: both;
+	max-width: 980px;
+	margin: 0 auto;
+	font-size: 10px;
+	line-height: 12px;
+	color: #6e6e6e;
+}
+footer a {
+	text-decoration: none;
+	color: #08c;
+	box-sizing: content-box;
+	display: inline-block;
+	border-right: 1px solid rgb(204,204,204);
+}
+#shop {
+	display: inline-block;
+	float: left;
+	margin-bottom: 5px;
+}
+#shop p {
+	margin-top: 0;
+}
+#links {
+	display: inline-block;
+	float: right;
+	position: relative;
+	bottom: 7px;
+	margin-bottom: 5px;
+}
+#links ul {
+	margin: 0;
+	padding: 0;
+}
+#links .last {
+	position: relative;
+	top: 4px;
+}
+#links a,
+#copyright a {
+	padding: 0 5px 0 4px;
+}
+#copyright {
+	clear: both;
+	margin-bottom: 26px;
+}
+#copyright p {
+	margin: 0;
+}
